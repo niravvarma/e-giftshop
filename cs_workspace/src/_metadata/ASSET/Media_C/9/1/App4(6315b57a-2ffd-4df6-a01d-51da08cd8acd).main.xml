@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:assetBean xmlns:ns2="http://www.fatwire.com/schema/rest/1.0">
+    <id>Media_C:1336167725684</id>
+    <name>App4</name>
+    <createdby>fwadmin</createdby>
+    <createddate>2012-12-11T19:58:39.131Z</createddate>
+    <description></description>
+    <publist>EGiftShop</publist>
+    <status>PL</status>
+    <subtype>GiftCardsImages</subtype>
+    <updatedby>fwadmin</updatedby>
+    <updateddate>2012-12-11T19:58:39.131Z</updateddate>
+    <attribute>
+        <name>startdate</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>enddate</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>filename</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>path</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>template</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>urlexternaldoc</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>externaldoctype</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>urlexternaldocxml</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>fw_uid</name>
+        <data>
+            <stringValue>6315b57a-2ffd-4df6-a01d-51da08cd8acd</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>id</name>
+        <data>
+            <longValue>1336167725684</longValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>SegRating</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>fwtags</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>flextemplateid</name>
+        <data>
+            <stringValue>Media_CD:1336167725538</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>Relationships</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>AltText</name>
+        <data>
+            <stringValue>HAT</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>ImageFile</name>
+        <data>
+            <blobValue>
+                <filename>App4.ImageFile(6315b57a-2ffd-4df6-a01d-51da08cd8acd).app4.jpg</filename>
+                <foldername></foldername>
+                <filedata></filedata>
+            </blobValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>ImageName</name>
+        <data>
+            <stringValue>HAT</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>renderid</name>
+        <data/>
+    </attribute>
+    <associations>
+        <href>myPathassociations</href>
+    </associations>
+</ns2:assetBean>
+
+<!--==================___ METADATA ___================
+<dependencies>
+  <list>
+    <dependency>
+      <depType>E</depType>
+      <resType>Media_A</resType>
+      <resId>1336167724792</resId>
+      <uid>0451d5d4-48b7-4cda-9a23-afc49ae9fda4</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Media_A</resType>
+      <resId>1336167724798</resId>
+      <uid>9972e465-119f-49e9-aff4-be930016f44c</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Media_A</resType>
+      <resId>1336167724804</resId>
+      <uid>50584018-c232-44f2-a564-43f8933d72c2</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Media_CD</resType>
+      <resId>1336167725538</resId>
+      <uid>c7041c35-0d0e-4ef6-95e5-31a878c4be8c</uid>
+    </dependency>
+    <dependency>
+      <depType>N</depType>
+      <resType>Media_C</resType>
+      <resId>1336167725684</resId>
+      <uid>6315b57a-2ffd-4df6-a01d-51da08cd8acd</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>@ASSET_TYPE</resType>
+      <resId>Media_C</resId>
+      <uid>e351a58f-c24c-4b1d-af49-5618caaa678d</uid>
+    </dependency>
+  </list>
+</dependencies>
+==================______________________==================
+#
+#Fri Jan 18 11:37:31 IST 2013
+storable0=ASSET/Media_C/9/1/App4.ImageFile(6315b57a-2ffd-4df6-a01d-51da08cd8acd).app4.jpg||_storable_type\=App4.ImageFile%286315b57a-2ffd-4df6-a01d-51da08cd8acd%29.app4.jpg&_blob_prop\=ImageFile&_value_count\=S
+key=Media_C-6315b57a-2ffd-4df6-a01d-51da08cd8acd
+type=ASSETDATA
+sites=EGiftShop
+
+==================___ END METADATA ___==================-->

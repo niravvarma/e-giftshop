@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:assetBean xmlns:ns2="http://www.fatwire.com/schema/rest/1.0">
+    <id>Dimension:1336167729777</id>
+    <name>en_US</name>
+    <createdby>fwadmin</createdby>
+    <createddate>2013-01-18T00:48:30.829Z</createddate>
+    <description>US English</description>
+    <publist>EGiftShop</publist>
+    <status>PL</status>
+    <subtype>Locale</subtype>
+    <updatedby>fwadmin</updatedby>
+    <updateddate>2013-01-18T00:48:30.848Z</updateddate>
+    <attribute>
+        <name>startdate</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>enddate</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>filename</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>path</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>template</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>urlexternaldoc</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>externaldoctype</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>urlexternaldocxml</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>fw_uid</name>
+        <data>
+            <stringValue>c54a3d95-e88f-45d4-a7d8-584f9cd309ab</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>id</name>
+        <data>
+            <longValue>1336167729777</longValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>fwtags</name>
+        <data/>
+    </attribute>
+    <associations>
+        <href>myPathassociations</href>
+    </associations>
+</ns2:assetBean>
+
+<!--==================___ METADATA ___================
+<dependencies>
+  <list>
+    <dependency>
+      <depType>N</depType>
+      <resType>Dimension</resType>
+      <resId>1336167729777</resId>
+      <uid>c54a3d95-e88f-45d4-a7d8-584f9cd309ab</uid>
+    </dependency>
+  </list>
+</dependencies>
+==================______________________==================
+#
+#Sun Feb 03 05:29:03 IST 2013
+key=Dimension-c54a3d95-e88f-45d4-a7d8-584f9cd309ab
+type=ASSETDATA
+sites=EGiftShop
+
+==================___ END METADATA ___==================-->

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:assetBean xmlns:ns2="http://www.fatwire.com/schema/rest/1.0">
+    <id>Gift_Product_C:1336167725609</id>
+    <name>GiftCard1</name>
+    <createdby>fwadmin</createdby>
+    <createddate>2012-12-11T19:50:44.367Z</createddate>
+    <description></description>
+    <publist>EGiftShop</publist>
+    <status>ED</status>
+    <subtype>GiftCards</subtype>
+    <updatedby>fwadmin</updatedby>
+    <updateddate>2013-01-15T19:00:57.217Z</updateddate>
+    <attribute>
+        <name>startdate</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>enddate</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>filename</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>path</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>template</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>urlexternaldoc</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>externaldoctype</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>urlexternaldocxml</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>fw_uid</name>
+        <data>
+            <stringValue>9b7cc90a-c2b2-4585-a484-88c0e0b110ef</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>id</name>
+        <data>
+            <longValue>1336167725609</longValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>SegRating</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>fwtags</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>flextemplateid</name>
+        <data>
+            <stringValue>Gift_Product_CD:1336167725589</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>Relationships</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>GiftProductCost</name>
+        <data>
+            <stringValue>$30</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>GiftProductDetail</name>
+        <data>
+            <stringValue>&lt;div&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			Gift cards are available in any denomination up to $500&lt;/li&gt;
+		&lt;li&gt;
+			No expiration or dormancy fees&lt;/li&gt;
+		&lt;li&gt;
+			Option to include custom message(s)&lt;/li&gt;
+		&lt;li&gt;
+			Personalized card carriers&lt;/li&gt;
+		&lt;li&gt;
+			Redeemable at any Yard House location or Yard House Bar &amp;amp; Grill&lt;/li&gt;
+		&lt;li&gt;
+			Orders placed before 2PM (PST), Monday-Friday, will be processed the same day&lt;br /&gt;
+			and ship from Irvine, CA&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+	&amp;nbsp;&lt;/div&gt;
+</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>GiftProductImage</name>
+        <data>
+            <stringValue>Media_C:1336167725547</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>GiftProductName</name>
+        <data>
+            <stringValue>Gift Card1</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>GiftProductSummary</name>
+        <data>
+            <stringValue>&lt;div&gt;
+	&lt;div&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				Gift cards are available in any denomination up to $500&lt;/li&gt;
+			&lt;li&gt;
+				No expiration or dormancy fees&lt;/li&gt;
+			&lt;li&gt;
+				Option to include custom message(s)&lt;/li&gt;
+			&lt;li&gt;
+				Personalized card carriers&lt;/li&gt;
+			&lt;li&gt;
+				Redeemable at any Yard House location or Yard House Bar &amp;amp; Grill&lt;/li&gt;
+			&lt;li&gt;
+				Orders placed before 2PM (PST), Monday-Friday, will be processed the same day&lt;br /&gt;
+				and ship from Irvine, CA&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+	&amp;nbsp;&lt;/div&gt;
+</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>GiftProductDiscounts</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>ProductThumb</name>
+        <data>
+            <blobValue>
+                <filename>GiftCard1.ProductThumb(9b7cc90a-c2b2-4585-a484-88c0e0b110ef).Thumb.jpg</filename>
+                <foldername></foldername>
+                <filedata></filedata>
+            </blobValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>renderid</name>
+        <data/>
+    </attribute>
+    <associations>
+        <href>myPathassociations</href>
+    </associations>
+</ns2:assetBean>
+
+<!--==================___ METADATA ___================
+<dependencies>
+  <list>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_A</resType>
+      <resId>1336167724839</resId>
+      <uid>6d67651d-e51e-479b-bdd0-2aefa7824d2e</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_A</resType>
+      <resId>1336167724845</resId>
+      <uid>3cffae7f-cb8a-4858-bc88-818192c2566f</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_A</resType>
+      <resId>1336167724855</resId>
+      <uid>8bcf7c8e-55aa-46f4-818e-c5fc0f86ed5c</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_A</resType>
+      <resId>1336167724861</resId>
+      <uid>5ce269d5-a86c-4cf8-810e-522ca38a9647</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_A</resType>
+      <resId>1336167724873</resId>
+      <uid>498a469b-a184-4ff7-919c-ff6dd403e43c</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_A</resType>
+      <resId>1336167729271</resId>
+      <uid>43c7458e-34f3-4310-8f04-d597393eea34</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_CD</resType>
+      <resId>1336167725589</resId>
+      <uid>128ba0f8-564a-4e9e-838b-67f55c6683b4</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Media_C</resType>
+      <resId>1336167725547</resId>
+      <uid>41021276-5149-4616-882e-bda280f453fe</uid>
+    </dependency>
+    <dependency>
+      <depType>N</depType>
+      <resType>Gift_Product_C</resType>
+      <resId>1336167725609</resId>
+      <uid>9b7cc90a-c2b2-4585-a484-88c0e0b110ef</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>@ASSET_TYPE</resType>
+      <resId>Gift_Product_C</resId>
+      <uid>a78b361e-ef60-429c-8ecf-e71e7e0fb676</uid>
+    </dependency>
+  </list>
+</dependencies>
+==================______________________==================
+#
+#Fri Jan 18 11:35:57 IST 2013
+storable0=ASSET/Gift_Product_C/7/70/GiftCard1.ProductThumb(9b7cc90a-c2b2-4585-a484-88c0e0b110ef).Thumb.jpg||_storable_type\=GiftCard1.ProductThumb%289b7cc90a-c2b2-4585-a484-88c0e0b110ef%29.Thumb.jpg&_blob_prop\=ProductThumb&_value_count\=S
+key=Gift_Product_C-9b7cc90a-c2b2-4585-a484-88c0e0b110ef
+type=ASSETDATA
+sites=EGiftShop
+
+==================___ END METADATA ___==================-->

@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<!DOCTYPE FTCS SYSTEM "futuretense_cs.dtd">
+<FTCS Version="1.1">
+<!-- 
+Logfile:  $ 
+$Revision: 28 $ 
+$Modtime: 2/17/03 12:23p $ 
+-->
+<!--
+- Confidential and Proprietary Information of Open Market, Inc.
+-					All Rights Reserved.
+-
+- DESCRIPTION
+-	 The basic idea: start with a minimum, default
+-    query. Then append additional criteria depending
+-    on fields that have been selected in the search
+-    form
+-->
+<!-- Set the table name for SQLEXP use -->
+	<SETVAR NAME="tablename" VALUE="Dimension" />
+	<if COND="IsVariable.Id=true">
+		<then>
+			<SETVAR NAME="queryend" VALUE="Variables.queryend AND Dimension.id = Variables.Id" />
+		</then>
+	</if>
+
+    <if COND="IsVariable.uId=true">
+		<then>
+			<SETVAR NAME="queryend" VALUE="Variables.queryend AND Dimension.fw_uid = 'Variables.uId'" />
+            <XLAT.LOOKUP KEY="dvin/UI/Search/FWUIDis" VARNAME="_XLAT_"/>
+
+            <SETVAR NAME="filterstring" VALUE="Variables.filterstring : Variables._XLAT_ 'Variables.uId'"/>
+        </then>
+	</if>
+<!-- note that template is a lowercase variable name -->
+	<if COND="IsVariable.template=true">
+		<then>
+			<ics.literal table="Dimension" column="template" string="Variables.template" output="literal" />
+			<SETVAR NAME="queryend" VALUE="Variables.queryend AND Dimension.template=Variables.literal" />
+		</then>
+	</if>
+	<if COND="IsVariable.Subtype=true">
+		<then>
+			<ics.literal table="Dimension" column="subtype" string="Variables.Subtype" output="literal" />
+			<SETVAR NAME="queryend" VALUE="Variables.queryend AND Dimension.subtype=Variables.literal" />
+		</then>
+	</if>
+	<if COND="IsVariable.Status=true">
+		<then>
+			<SETVAR NAME="queryend" VALUE="Variables.queryend AND Dimension.status='Variables.Status'" />
+		</then>
+	</if>
+	<if COND="IsVariable.Description=true">
+		<then>
+			<SQLEXP OUTSTR="queryappend" TYPE="OR" VERB="LIKE" STR="Variables.Description" COLNAME="Dimension.description" />
+			<SETVAR NAME="queryend" VALUE="Variables.queryend AND (Variables.queryappend)" />
+			<SETVAR NAME="queryend" VALUE="Variables.queryend AND (Variables.queryappend)" />
+		</then>
+	</if>
+	<if COND="IsVariable.UpdatedBy=true">
+		<then>
+			<ics.literal table="Dimension" column="updatedby" string="Variables.UpdatedBy" output="literal" />
+			<SETVAR NAME="queryend" VALUE="Variables.queryend AND Dimension.updatedby=Variables.literal" />
+		</then>
+	</if>
+	<if COND="IsVariable.UpdatedBefore=true">
+		<then>
+			<if COND="Variables.UpdatedBefore!=Variables.null">
+				<then>
+					<SETVAR NAME="queryend" VALUE="Variables.queryend AND Dimension.updateddate &#060; Variables.UpdatedBefore" />
+				</then>
+			</if>
+		</then>
+	</if>
+	<if COND="IsVariable.UpdatedAfter=true">
+		<then>
+			<if COND="Variables.UpdatedAfter!=Variables.null">
+				<then>
+					<SETVAR NAME="queryend" VALUE="Variables.queryend AND Variables.UpdatedAfter &#060; Dimension.updateddate" />
+				</then>
+			</if>
+		</then>
+	</if>
+	<if COND="IsVariable.Name=true">
+		<then>
+			<SQLEXP OUTSTR="queryappend" TYPE="OR" VERB="LIKE" STR="Variables.Name" COLNAME="Dimension.name" />
+			<SETVAR NAME="queryend" VALUE="Variables.queryend AND (Variables.queryappend)" />
+		</then>
+	</if>
+	<callelement NAME="OpenMarket/Xcelerate/Actions/Search/BuildFilterString" />
+</FTCS>

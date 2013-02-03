@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:assetBean xmlns:ns2="http://www.fatwire.com/schema/rest/1.0">
+    <id>Gift_Product_C:1336167725806</id>
+    <name>GiftApparel6</name>
+    <createdby>fwadmin</createdby>
+    <createddate>2012-12-11T20:07:04.303Z</createddate>
+    <description></description>
+    <publist>EGiftShop</publist>
+    <status>PL</status>
+    <subtype>GiftApparel</subtype>
+    <updatedby>fwadmin</updatedby>
+    <updateddate>2012-12-11T20:07:04.303Z</updateddate>
+    <attribute>
+        <name>startdate</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>enddate</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>filename</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>path</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>template</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>urlexternaldoc</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>externaldoctype</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>urlexternaldocxml</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>fw_uid</name>
+        <data>
+            <stringValue>959bd112-72d2-406c-a25b-bd5a980648a3</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>id</name>
+        <data>
+            <longValue>1336167725806</longValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>SegRating</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>fwtags</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>flextemplateid</name>
+        <data>
+            <stringValue>Gift_Product_CD:1336167725600</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>Relationships</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>GiftProductCost</name>
+        <data>
+            <stringValue>$14.95</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>GiftProductDiscounts</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>GiftProductImage</name>
+        <data>
+            <stringValue>Media_C:1336167725725</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>GiftProductName</name>
+        <data>
+            <stringValue>KEG SHIRT - BEER LIST ON BACK - WOMEN'S</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>GiftProductSummary</name>
+        <data>
+            <stringValue>&lt;div&gt;
+	100% Combed Cotton, Classic Girl fit&lt;/div&gt;
+</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>ProductThumb</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>renderid</name>
+        <data/>
+    </attribute>
+    <associations>
+        <href>myPathassociations</href>
+    </associations>
+</ns2:assetBean>
+
+<!--==================___ METADATA ___================
+<dependencies>
+  <list>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_A</resType>
+      <resId>1336167724839</resId>
+      <uid>6d67651d-e51e-479b-bdd0-2aefa7824d2e</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_A</resType>
+      <resId>1336167724845</resId>
+      <uid>3cffae7f-cb8a-4858-bc88-818192c2566f</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_A</resType>
+      <resId>1336167724861</resId>
+      <uid>5ce269d5-a86c-4cf8-810e-522ca38a9647</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_A</resType>
+      <resId>1336167724873</resId>
+      <uid>498a469b-a184-4ff7-919c-ff6dd403e43c</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_CD</resType>
+      <resId>1336167725600</resId>
+      <uid>02c809de-8ff3-4c72-9174-ec435f63e652</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Media_C</resType>
+      <resId>1336167725725</resId>
+      <uid>1489d58d-618b-405c-b342-2cfc6b05ed46</uid>
+    </dependency>
+    <dependency>
+      <depType>N</depType>
+      <resType>Gift_Product_C</resType>
+      <resId>1336167725806</resId>
+      <uid>959bd112-72d2-406c-a25b-bd5a980648a3</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>@ASSET_TYPE</resType>
+      <resId>Gift_Product_C</resId>
+      <uid>a78b361e-ef60-429c-8ecf-e71e7e0fb676</uid>
+    </dependency>
+  </list>
+</dependencies>
+==================______________________==================
+#
+#Fri Jan 18 11:35:59 IST 2013
+key=Gift_Product_C-959bd112-72d2-406c-a25b-bd5a980648a3
+type=ASSETDATA
+sites=EGiftShop
+
+==================___ END METADATA ___==================-->

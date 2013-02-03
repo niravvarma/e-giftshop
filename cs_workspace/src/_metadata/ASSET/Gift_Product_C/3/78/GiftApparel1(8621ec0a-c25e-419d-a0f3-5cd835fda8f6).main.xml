@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:assetBean xmlns:ns2="http://www.fatwire.com/schema/rest/1.0">
+    <id>Gift_Product_C:1336167725637</id>
+    <name>GiftApparel1</name>
+    <createdby>fwadmin</createdby>
+    <createddate>2012-12-11T20:01:50.555Z</createddate>
+    <description></description>
+    <publist>EGiftShop</publist>
+    <status>ED</status>
+    <subtype>GiftApparel</subtype>
+    <updatedby>fwadmin</updatedby>
+    <updateddate>2013-01-15T19:02:33.618Z</updateddate>
+    <attribute>
+        <name>startdate</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>enddate</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>filename</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>path</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>template</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>urlexternaldoc</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>externaldoctype</name>
+        <data>
+            <stringValue></stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>urlexternaldocxml</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>fw_uid</name>
+        <data>
+            <stringValue>8621ec0a-c25e-419d-a0f3-5cd835fda8f6</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>id</name>
+        <data>
+            <longValue>1336167725637</longValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>SegRating</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>fwtags</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>flextemplateid</name>
+        <data>
+            <stringValue>Gift_Product_CD:1336167725600</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>Relationships</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>GiftProductCost</name>
+        <data>
+            <stringValue>$12.95</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>GiftProductDiscounts</name>
+        <data/>
+    </attribute>
+    <attribute>
+        <name>GiftProductImage</name>
+        <data>
+            <stringValue>Media_C:1336167725639</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>GiftProductName</name>
+        <data>
+            <stringValue>ATHLETIC ORIGINAL - V-NECK WITH STONES - WOMEN'S</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>GiftProductSummary</name>
+        <data>
+            <stringValue>&lt;div&gt;
+	&lt;div&gt;
+		50/Poly/25/Cotton/25/Rayon, Vintage Tri Blend&lt;/div&gt;
+	&lt;div style="color:#fff;font-size:14px;margin-bottom:20px;"&gt;
+		50/Poly/25/Cotton/25/Rayon, Vintage Tri Blend&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+	&amp;nbsp;&lt;/div&gt;
+</stringValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>ProductThumb</name>
+        <data>
+            <blobValue>
+                <filename>GiftApparel1.ProductThumb(8621ec0a-c25e-419d-a0f3-5cd835fda8f6).Thumb.jpg</filename>
+                <foldername></foldername>
+                <filedata></filedata>
+            </blobValue>
+        </data>
+    </attribute>
+    <attribute>
+        <name>renderid</name>
+        <data/>
+    </attribute>
+    <associations>
+        <href>myPathassociations</href>
+    </associations>
+</ns2:assetBean>
+
+<!--==================___ METADATA ___================
+<dependencies>
+  <list>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_A</resType>
+      <resId>1336167724839</resId>
+      <uid>6d67651d-e51e-479b-bdd0-2aefa7824d2e</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_A</resType>
+      <resId>1336167724845</resId>
+      <uid>3cffae7f-cb8a-4858-bc88-818192c2566f</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_A</resType>
+      <resId>1336167724861</resId>
+      <uid>5ce269d5-a86c-4cf8-810e-522ca38a9647</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_A</resType>
+      <resId>1336167724873</resId>
+      <uid>498a469b-a184-4ff7-919c-ff6dd403e43c</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_A</resType>
+      <resId>1336167729271</resId>
+      <uid>43c7458e-34f3-4310-8f04-d597393eea34</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Gift_Product_CD</resType>
+      <resId>1336167725600</resId>
+      <uid>02c809de-8ff3-4c72-9174-ec435f63e652</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>Media_C</resType>
+      <resId>1336167725639</resId>
+      <uid>e55cbec1-17b8-4cc7-987b-55740a4c1beb</uid>
+    </dependency>
+    <dependency>
+      <depType>N</depType>
+      <resType>Gift_Product_C</resType>
+      <resId>1336167725637</resId>
+      <uid>8621ec0a-c25e-419d-a0f3-5cd835fda8f6</uid>
+    </dependency>
+    <dependency>
+      <depType>E</depType>
+      <resType>@ASSET_TYPE</resType>
+      <resId>Gift_Product_C</resId>
+      <uid>a78b361e-ef60-429c-8ecf-e71e7e0fb676</uid>
+    </dependency>
+  </list>
+</dependencies>
+==================______________________==================
+#
+#Fri Jan 18 11:35:57 IST 2013
+storable0=ASSET/Gift_Product_C/3/78/GiftApparel1.ProductThumb(8621ec0a-c25e-419d-a0f3-5cd835fda8f6).Thumb.jpg||_storable_type\=GiftApparel1.ProductThumb%288621ec0a-c25e-419d-a0f3-5cd835fda8f6%29.Thumb.jpg&_blob_prop\=ProductThumb&_value_count\=S
+key=Gift_Product_C-8621ec0a-c25e-419d-a0f3-5cd835fda8f6
+type=ASSETDATA
+sites=EGiftShop
+
+==================___ END METADATA ___==================-->
