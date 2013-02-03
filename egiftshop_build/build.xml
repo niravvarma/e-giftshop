@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="EGiftShop Build" default="csdtPrintHelp" basedir=".">
+	<description>EGiftShop Build</description>
+	
+	<!-- Cross-environment project properties -->
+	<property file="${basedir}/conf/project.properties" />
+	
+	<!-- Determine which environment is being built -->
+    <condition property="build.env" value="${build.env}" else="local">
+        <isset property="build.env" />
+    </condition>
+	<echo message="build.env: ${build.env}" />
+	
+	<!-- Load the local properties file if one exists -->
+	<property file="${basedir}/conf/build-${build.env}.properties" />
+	
+	<path id="project.class.path">
+		<pathelement path="${dir.lib-build}/csdt-client-1.2.jar" />
+		<pathelement path="${dir.lib-build}/com.sun.tools.xjc_2.2.0.jar" />
+		<pathelement path="${dir.lib-build}/com.sun.xml.bind_2.2.0.v201004141950.jar" />
+		<pathelement path="${dir.lib-build}/javax.activation_1.1.0.v201005080500.jar" />
+		<pathelement path="${dir.lib-build}/javax.jms_1.1.1.jar" />
+		<pathelement path="${dir.lib-build}/javax.mail_1.4.0.v201005080615.jar" />
+		<pathelement path="${dir.lib-build}/javax.transaction_1.0.0.0_1-1.jar" />
+		<pathelement path="${dir.lib-build}/javax.xml.bind_2.2.0.v201005080402.jar" />
+		<pathelement path="${dir.lib-build}/javax.xml.stream_1.0.1.v201004272200.jar" />
+		<pathelement path="${dir.lib-build}/log4j-1.2.15.jar" />
+		<pathelement path="${dir.lib-build}/ojdbc6.jar" />
+		<pathelement path="${dir.lib-build}/wlclient.jar" />
+		<pathelement path="${dir.lib-build}/log4j-1.2.15.jar" />
+	</path>
+	
+	<target name="csdtPrintHelp" description="Print the CSDT help">
+		<java classname="com.fatwire.csdt.client.main.CSDT">
+			<classpath refid="project.class.path" />
+		</java>
+	</target>
+	
+	<target name="csdt_IMPORT_ALL" description="Import Everything from cs_workspace into ContentServer">
+		<antcall target="csdt_IMPORT_SITES"></antcall>
+		
+		<antcall target="csdt_IMPORT_CODEOBJECTS"></antcall>
+		
+		<antcall target="csdt_IMPORT_ASSETTYPES"></antcall>
+				
+		<antcall target="csdt_IMPORT_ROLES"></antcall>
+		
+		<antcall target="csdt_IMPORT_STARTMENU"></antcall>
+		
+		<antcall target="csdt_IMPORT_PAGE"></antcall>
+		
+		<!--<antcall target="csdt_IMPORT_RECOMMENDATIONS"></antcall>-->
+		
+		<antcall target="csdt_IMPORT_Gift_Product"></antcall>
+		
+		<antcall target="csdt_IMPORT_Media"></antcall>
+			
+		<antcall target="csdt_IMPORT_TREETABS"></antcall>
+				
+	</target>
+	
+	<target name="csdt_IMPORT_SITES" description="Import SITES into ContentServer">
+		<echo message="Importing the site definition" />
+		<java classname="com.fatwire.csdt.client.main.CSDT">
+			<arg value="${cs.url}" />
+			<arg value="username=${cs.username}" />
+			<arg value="password=${cs.password}" />
+			<arg value="cmd=import" />
+			<arg value="resources=@SITE:EGiftShop" />
+			<classpath refid="project.class.path" />
+		</java>
+	</target>
+	
+	<target name="csdt_IMPORT_CODEOBJECTS" description="Import code (cselement,siteentry,template) into ContentServer">
+		<echo message="Importing the templates" />
+		<java classname="com.fatwire.csdt.client.main.CSDT">
+			<arg value="${cs.url}" />
+			<arg value="username=${cs.username}" />
+			<arg value="password=${cs.password}" />
+			<arg value="cmd=import" />
+			<arg value="resources=Template" />
+			<classpath refid="project.class.path" />
+		</java>
+		
+		<echo message="Importing the cselements" />
+		<java classname="com.fatwire.csdt.client.main.CSDT">
+			<arg value="${cs.url}" />
+			<arg value="username=${cs.username}" />
+			<arg value="password=${cs.password}" />
+			<arg value="cmd=import" />
+			<arg value="resources=CSElement" />
+			<classpath refid="project.class.path" />
+		</java>
+			
+		<echo message="Importing the SiteEntry" />
+		<java classname="com.fatwire.csdt.client.main.CSDT">
+			<arg value="${cs.url}" />
+			<arg value="username=${cs.username}" />
+			<arg value="password=${cs.password}" />
+			<arg value="cmd=import" />
+			<arg value="resources=SiteEntry" />
+			<classpath refid="project.class.path" />
+		</java>
+	</target>
+	
+	<target name="csdt_IMPORT_ASSETTYPES" description="Import asset types into ContentServer">
+		<echo message="Importing AssetTypes to Workspace" />
+		<java classname="com.fatwire.csdt.client.main.CSDT">
+			<arg value="${cs.url}" />
+			<arg value="username=${cs.username}" />
+			<arg value="password=${cs.password}" />
+			<arg value="cmd=import" />
+			<arg value="fromSites=${cs.sitename}" />
+			<arg value="resources=@ASSET_TYPE:*" />
+			<classpath refid="project.class.path" />
+		</java>
+	</target>
+	
+	<target name="csdt_IMPORT_ROLES" description="Import ROLES into ContentServer">
+		<echo message="Importing the site definition" />
+		<java classname="com.fatwire.csdt.client.main.CSDT">
+			<arg value="${cs.url}" />
+			<arg value="username=${cs.username}" />
+			<arg value="password=${cs.password}" />
+			<arg value="cmd=import" />
+			<arg value="resources=@ROLE" />
+			<classpath refid="project.class.path" />
+		</java>
+	</target>
+	
+	<target name="csdt_IMPORT_STARTMENU" description="Import STARTMENU into ContentServer">
+		<echo message="Importing StartMenus" />
+		<java classname="com.fatwire.csdt.client.main.CSDT">
+			<arg value="${cs.url}" />
+			<arg value="username=${cs.username}" />
+			<arg value="password=${cs.password}" />
+			<arg value="cmd=import" />
+			<arg value="resources=@STARTMENU" />
+			<classpath refid="project.class.path" />
+		</java>
+	</target>
+	
+	<target name="csdt_IMPORT_TREETABS" description="Import TREETABS into ContentServer">
+		<echo message="Importing TREETABS" />
+		<java classname="com.fatwire.csdt.client.main.CSDT">
+			<arg value="${cs.url}" />
+			<arg value="username=${cs.username}" />
+			<arg value="password=${cs.password}" />
+			<arg value="cmd=import" />
+			<arg value="resources=@TREETAB" />
+			<classpath refid="project.class.path" />
+		</java>
+	</target>
+	
+	<target name="csdt_IMPORT_Gift_Product" description="Import Gift Product Assets">
+		<echo message="Importing GiftProduct Assets" />
+		<java classname="com.fatwire.csdt.client.main.CSDT">
+			<arg value="${cs.url}" />
+			<arg value="username=${cs.username}" />
+			<arg value="password=${cs.password}" />
+			<arg value="cmd=import" />
+			<arg value="resources=Gift_Product_A:*;Gift_Product_PD:*;Gift_Product_CD:*;Gift_Product_P:*;Gift_Product_C:*;" />
+			<classpath refid="project.class.path" />
+		</java>
+	</target>
+	
+	<target name="csdt_IMPORT_Media" description="Import Media Assets">
+		<echo message="Importing Media Assets" />
+		<java classname="com.fatwire.csdt.client.main.CSDT">
+			<arg value="${cs.url}" />
+			<arg value="username=${cs.username}" />
+			<arg value="password=${cs.password}" />
+			<arg value="cmd=import" />
+			<arg value="resources=Media_A:*;Media_PD:*;Media_CD:*;Media_P:*;Media_C:*;" />
+			<classpath refid="project.class.path" />
+		</java>
+	</target>
+	
+	<target name="csdt_IMPORT_PAGE" description="Import Page assets into ContentServer">
+		<echo message="Importing Page Assets to Workspace" />
+		<java classname="com.fatwire.csdt.client.main.CSDT">
+			<arg value="${cs.url}" />
+			<arg value="username=${cs.username}" />
+			<arg value="password=${cs.password}" />
+			<arg value="cmd=import" />
+			<arg value="fromSites=${cs.sitename}" />
+			<arg value="resources=Page" />
+			<classpath refid="project.class.path" />
+		</java>			
+	</target>
+	
+<!--	<target name="csdt_IMPORT_RECOMMENDATIONS" description="Import Recs into ContentServer">
+		<echo message="Importing the recommendations" />
+		
+		<java classname="com.fatwire.csdt.client.main.CSDT">
+			<arg value="${cs.url}" />
+			<arg value="username=${cs.username}" />
+			<arg value="password=${cs.password}" />
+			<arg value="cmd=import" />
+			<arg value="resources=ScalarVals" />
+			<classpath refid="project.class.path" />
+		</java>
+		
+		<java classname="com.fatwire.csdt.client.main.CSDT">
+			<arg value="${cs.url}" />
+			<arg value="username=${cs.username}" />
+			<arg value="password=${cs.password}" />
+			<arg value="cmd=import" />
+			<arg value="resources=Segments" />
+			<classpath refid="project.class.path" />
+		</java>
+		
+		<java classname="com.fatwire.csdt.client.main.CSDT">
+			<arg value="${cs.url}" />
+			<arg value="username=${cs.username}" />
+			<arg value="password=${cs.password}" />
+			<arg value="cmd=import" />
+			<arg value="resources=AdvCols" />
+			<classpath refid="project.class.path" />
+		</java>
+	</target> -->
+	
+	<target name="static_DEPLOY" description="Deploy Static">
+		<echo message="Deleting static files" />
+		<delete dir="${dir.static.deploy}"></delete>
+		
+		<echo message="Deploying static resources for EGiftShop" />
+		<copy todir="${dir.static.deploy}" verbose="true" overwrite="true">
+			<fileset dir="${dir.ide.workspace}/egiftshop_static_resources" />
+		</copy>
+	</target>
+	
+	<target name="export_to_dropbox" description="export src and static files to dropbox">
+	     <echo message="exporting files to dropbox..." />
+		     
+	    <echo message="exporting src folder to dropbox..." />
+	    <copy todir="${dir.dropbox.share}/src" verbose="true" overwrite="true">
+			<fileset dir="${dir.cs_workspace.src}" />
+		</copy>
+		
+		<echo message="exporting static resources to dropbox...." />
+		<copy todir="${dir.dropbox.share}/egiftshop_static_resources" verbose="true" overwrite="true">
+			<fileset dir="${dir.ide.workspace}/egiftshop_static_resources" />
+		</copy>
+		
+		<echo message="exporting build folder to dropbox...." />
+		<copy todir="${dir.dropbox.share}/egiftshop_build" verbose="true" overwrite="true">
+			<fileset dir="${dir.ide.workspace}/egiftshop_build" />
+		</copy>
+	</target>
+	
+	<target name="import_from_dropbox" description="import src and static files to dropbox">
+	     <echo message="importing files to dropbox..." />
+		     
+	     <echo message="importing src folder to dropbox..." />
+	     <copy todir="${dir.cs_workspace.src}" verbose="true" overwrite="true">
+			<fileset dir="${dir.dropbox.share}/src" />
+		</copy>
+		
+		<echo message="importing static resources from dropbox...." />
+		<delete dir="${dir.ide.workspace}/egiftshop_static_resources"></delete>
+		<copy todir="${dir.ide.workspace}/egiftshop_static_resources" verbose="true" overwrite="true">
+			<fileset dir="${dir.dropbox.share}/egiftshop_static_resources" />
+		</copy>
+		
+	</target>
+	
+</project>
