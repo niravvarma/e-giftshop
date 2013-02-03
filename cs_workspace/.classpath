@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="output" path="build"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/assetapi.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/OracleWebCenterSites/11gR1/ContentServer/11.1.1.6.0/developerdocs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="WEB-INF/lib/cs-core.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/OracleWebCenterSites/11gR1/ContentServer/11.1.1.6.0/developerdocs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="WEB-INF/lib/cs.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/OracleWebCenterSites/11gR1/ContentServer/11.1.1.6.0/developerdocs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="WEB-INF/lib/xcelerate.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/OracleWebCenterSites/11gR1/ContentServer/11.1.1.6.0/developerdocs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	   <classpathentry kind="lib" path="WEB-INF/lib/framework.jar">
+        <attributes>
+            <attribute name="javadoc_location" value="file:/C:/OracleWebCenterSites/11gR1/ContentServer/11.1.1.6.0/developerdocs/javadoc/"/>
+        </attributes>
+    </classpathentry>
+   <classpathentry kind="lib" path="WEB-INF/lib/ics.jar">
+       <attributes>
+           <attribute name="javadoc_location" value="file:/C:/OracleWebCenterSites/11gR1/ContentServer/11.1.1.6.0/developerdocs/javadoc/"/>
+       </attributes>
+    </classpathentry>
+	<classpathentry kind="lib" path="WEB-INF/lib/sseed.jar">
+       <attributes>
+           <attribute name="javadoc_location" value="file:/C:/OracleWebCenterSites/11gR1/ContentServer/11.1.1.6.0/developerdocs/javadoc/"/>
+       </attributes>
+    </classpathentry>
+   <classpathentry kind="lib" path="WEB-INF/lib/basic.jar">
+       <attributes>
+           <attribute name="javadoc_location" value="file:/C:/OracleWebCenterSites/11gR1/ContentServer/11.1.1.6.0/developerdocs/javadoc/"/>
+       </attributes>
+    </classpathentry>
+   <classpathentry kind="lib" path="WEB-INF/lib/gator.jar">
+       <attributes>
+           <attribute name="javadoc_location" value="file:/C:/OracleWebCenterSites/11gR1/ContentServer/11.1.1.6.0/developerdocs/javadoc/"/>
+       </attributes>
+    </classpathentry>
+   <classpathentry kind="lib" path="WEB-INF/lib/assetapi-impl.jar">
+       <attributes>
+           <attribute name="javadoc_location" value="file:/C:/OracleWebCenterSites/11gR1/ContentServer/11.1.1.6.0/developerdocs/javadoc/"/>
+       </attributes>
+    </classpathentry>
+</classpath>
