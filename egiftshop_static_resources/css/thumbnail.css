@@ -1,0 +1,91 @@
+body{
+	background-color:linen;
+}
+
+
+.dropdown-menu li > a {
+    color: indigo;
+}
+
+.dropdown-menu li>a:hover,.dropdown-menu li>a:focus,.dropdown-submenu:hover>a{    
+	background-color: #802C59;
+    background-image: linear-gradient(to bottom, #862E5E, #772953);
+    background-repeat: repeat-x;
+    border-color: #642246;
+}
+
+.thumbnails {
+    margin-bottom: 0;
+}
+.thumbnails li {
+    margin-bottom: 0;
+}
+
+.thumbnails .thumbnail {
+    background: url("/static/images/thumbnail-bg.png") repeat scroll 0 0 transparent;
+    border: medium none solid;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: none;
+    margin: 28px 0 0;
+    padding: 0;
+}
+
+.thumbnails .thumbnail .caption {
+    background: url("/static/images/thumbnail-caption.png") repeat-x scroll 0 0 #161618;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    overflow: hidden;
+    padding: 27px 0 23px 21px;
+}
+
+.thumbnails .thumbnail h3 {
+    color: #FFFFFF;
+    font-size: 22px;
+    margin: -3px 0 0;
+}
+.thumbnails .thumbnail:hover .caption {
+    background: url("/static/images/thumbnail-caption.png") repeat-x scroll 0 -204px #AC283A;
+}
+
+.thumbnails .thumbnail img {
+    float: left;
+    margin-top: -9px;
+	width: auto;
+}
+
+.thumbnails .thumbnail h5 {
+	color: slategrey;
+    margin: 0;
+    font-size: 20px;
+}
+
+.thumbnails .thumbnail:hover h5 {
+    color: #E397A1;
+}
+
+.thumbnails .thumbnail h3 {
+    font-size: 28px;
+}
+
+.thumbnails .thumbnail .thumbnail-pad {
+    padding: 25px 20px 30px 21px;
+}
+
+.thumbnails .thumbnail a.btn_ {
+    background: none repeat scroll 0 0 #171619;
+    color: white;
+    margin-top: 3px;
+}
+
+.thumbnails .thumbnail a.btn_:hover {
+    background: none repeat scroll 0 0 #CF3046;
+    color: #FFFFFF;
+}
+.thumbnails .thumbnail_1 a.btn_ {
+    background: none repeat scroll 0 0 #CF3046;
+    color: #FFFFFF;
+    margin-top: 3px;
+}
+.thumbnails .thumbnail_1 a.btn_:hover {
+    background: none repeat scroll 0 0 #171619;
+}
