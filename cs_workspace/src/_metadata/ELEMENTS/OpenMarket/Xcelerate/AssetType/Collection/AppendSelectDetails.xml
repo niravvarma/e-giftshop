@@ -1,0 +1,163 @@
+<?xml version="1.0" ?>
+<!DOCTYPE FTCS SYSTEM "futuretense_cs.dtd">
+
+<FTCS Version="1.1">
+<!-- 
+$Logfile: /VerticalApps/XcelerateC/install/Xcelerate/Populate/ElementCatalog/OpenMarket/Xcelerate/AssetType/Collection/AppendSelectDetails.xml $ 
+$Revision: 23 $ 
+$Modtime: 2/18/03 12:16p $ 
+-->
+
+<!--
+- Confidential and Proprietary Information of Open Market, Inc.
+-					All Rights Reserved.
+-
+- DESCRIPTION
+-	The basic idea: start with a minimum, default
+-    query. Then append additional criteria depending
+-    on fields that have been selected in the search
+-    form
+-->
+
+
+
+<!-- Set the table name for SQLEXP use -->
+
+	<SETVAR NAME="tablename" VALUE="Collection"/>
+
+<if COND="IsVariable.Name=true">
+	<then>
+        <!-- support case insensitive search for name field -- 3780 -->         
+        <TOLOWER OUTSTR="literal" STR="Variables.Name"/>
+          <ics.sqlexp output="queryappend" TYPE="OR" VERB="LIKE" 
+        STRING="Variables.literal" table="Collection" COLUMN="name" expression="lower(Collection.name)"/>
+ 
+ 
+		<!--SQLEXP OUTSTR="queryappend" TYPE="OR" VERB="LIKE" STR="Variables.Name" COLNAME="Collection.name"/-->
+		<SETVAR NAME="queryend" VALUE="Variables.queryend AND (Variables.queryappend)"/>
+  	</then>
+</if>
+
+
+<if COND="IsVariable.Description=true">
+	<then>
+        <!-- support case insensitive search for description  field -- 3780 -->         
+        <TOLOWER OUTSTR="literal" STR="Variables.Description"/>
+        <SQLEXP OUTSTR="queryappend" TYPE="OR" VERB="LIKE" 
+        STR="Variables.literal" COLNAME="lower(Collection.description)"/>
+		<!--SQLEXP OUTSTR="queryappend" TYPE="OR" VERB="LIKE" STR="Variables.Description" COLNAME="Collection.description"/-->
+		<SETVAR NAME="queryend" VALUE="Variables.queryend AND (Variables.queryappend)"/>
+        
+         
+ 	</then>
+</if>
+
+<if COND="IsVariable.Subtype=true">
+    <then>
+      <ics.literal  table="Collection" column="subtype" string="Variables.Subtype"  output="literal"/>
+	<SETVAR NAME="queryend" VALUE="Variables.queryend AND Collection.subtype=Variables.literal"/>
+    </then>
+</if>
+
+
+<!-- note that template is a lowercase variable name -->
+<if COND="IsVariable.template=true">
+    <then>
+    
+    <ics.literal  table="Template" column="template" string="Variables.template" output="literal"/>
+	<SETVAR NAME="queryend" VALUE="Variables.queryend AND Collection.template=Variables.literal"/>
+     </then>
+</if>
+
+<if COND="IsVariable.Status=true">
+    <then>
+	<SETVAR NAME="queryend" VALUE="Variables.queryend AND Collection.status='Variables.Status'"/>
+    </then>
+</if>
+
+<if COND="IsVariable.Category=true">
+    <then>
+    
+    <ics.literal  table="Category"   column="category" string="Variables.Category"  output="literal"/>
+	<SETVAR NAME="queryend" VALUE="Variables.queryend AND Collection.category=Variables.literal"/>
+    </then>
+</if>
+
+<if COND="IsVariable.Keyword=true">
+	<then>
+		<SQLEXP OUTSTR="queryappend" TYPE="OR" VERB="LIKE" STR="Variables.Keyword" COLNAME="Collection.keyword"/>
+		<SETVAR NAME="queryend" VALUE="Variables.queryend AND (Variables.queryappend)"/>
+     </then>
+</if>
+
+<if COND="IsVariable.Id=true">
+    <then>
+	<SETVAR NAME="queryend" VALUE="Variables.queryend AND Collection.id = Variables.Id "/>
+     </then>
+</if>
+
+<if COND="IsVariable.uId=true">
+    <then>
+	<SETVAR NAME="queryend" VALUE="Variables.queryend AND Collection.fw_uid = 'Variables.uId' "/>
+    <XLAT.LOOKUP KEY="dvin/UI/Search/FWUIDis" VARNAME="_XLAT_"/>
+
+    <SETVAR NAME="filterstring" VALUE="Variables.filterstring : Variables._XLAT_ 'Variables.uId'"/>
+     </then>
+</if>
+
+<if COND="IsVariable.UpdatedBefore=true">
+    <then>
+	<if COND="Variables.UpdatedBefore!=Variables.null">
+		<then>
+		<SETVAR NAME="queryend" VALUE="Variables.queryend AND Collection.updateddate &#060; Variables.UpdatedBefore"/>
+ 		</then>
+	</if>	
+    </then>
+</if>
+
+<if COND="IsVariable.UpdatedAfter=true">
+    <then>
+	<if COND="Variables.UpdatedAfter!=Variables.null">
+		<then>
+		<SETVAR NAME="queryend" VALUE="Variables.queryend AND Variables.UpdatedAfter &#060; Collection.updateddate"/>
+ 		</then>
+	</if>	
+    </then>
+</if>
+ <if COND="IsVariable.UpdatedBy=true">
+    <then>
+	<SETVAR NAME="queryend" VALUE="Variables.queryend AND Collection.updatedby='Variables.UpdatedBy'"/>
+     </then>
+</if>
+
+<!-- Add the start date to the query -->
+<IF COND="IsVariable.StartDateBefore=true">
+<THEN>
+	<SETVAR NAME="queryend" VALUE="Variables.queryend AND (Variables.AssetType.startdate &#060; Variables.StartDateBefore OR Variables.AssetType.startdate IS NULL)"/>
+</THEN>
+</IF>
+
+<IF COND="IsVariable.StartDateAfter=true">
+<THEN>
+	<SETVAR NAME="queryend" VALUE="Variables.queryend AND (Variables.StartDateAfter &#060; Variables.AssetType.startdate OR Variables.AssetType.startdate IS NULL)"/>
+</THEN>
+</IF>
+
+<!-- Add the end date to the query -->
+<IF COND="IsVariable.EndDateBefore=true">
+<THEN>
+	<SETVAR NAME="queryend" VALUE="Variables.queryend AND (Variables.AssetType.enddate &#060; Variables.EndDateBefore OR Variables.AssetType.enddate is NULL)"/>
+</THEN>
+</IF>
+
+<IF COND="IsVariable.EndDateAfter=true">
+<THEN>
+	<SETVAR NAME="queryend" VALUE="Variables.queryend AND (Variables.EndDateAfter &#060; Variables.AssetType.enddate OR Variables.AssetType.enddate is NULL)"/>
+</THEN>
+</IF>
+
+<!-- Build the Filter String that is displayed on the Search Results Screen -->
+
+<callelement NAME="OpenMarket/Xcelerate/Actions/Search/BuildFilterString"/>
+
+</FTCS>

@@ -11,7 +11,7 @@
         <description>Media Asset Definition</description>
         <usesearchindex>0</usesearchindex>
         <indexfile></indexfile>
-        <urldescriptorspec>C:\OracleWebCenterSites\11gR1\App_Server\apache-tomcat-6.0.32\temp\fwcs-tmp\temp30\dcs5403516887506727964.tmp</urldescriptorspec>
+        <urldescriptorspec>C:\OracleWebCenterSites\11gR1\App_Server\apache-tomcat-6.0.32\temp\fwcs-tmp\temp31\dcs7149967674164200560.tmp</urldescriptorspec>
         <canbechild>F</canbechild>
         <uid>0ceba927-21cd-4694-9c6a-3a990f6e8aaa</uid>
         <useDimension></useDimension>
@@ -520,7 +520,7 @@ YWJsZXMucXVlcnllbmQgICAgICAgIA0KDQo=</byte-array>
 </dependencies>
 ==================______________________==================
 #
-#Sun Feb 03 05:26:23 IST 2013
+#Sat Feb 09 08:37:51 IST 2013
 key=@ASSET_TYPE-0ceba927-21cd-4694-9c6a-3a990f6e8aaa
 type=ASSET_TYPE
 sites=EGiftShop

@@ -11,7 +11,7 @@
         <description>Media Parent</description>
         <usesearchindex>0</usesearchindex>
         <indexfile></indexfile>
-        <urldescriptorspec>C:\OracleWebCenterSites\11gR1\App_Server\apache-tomcat-6.0.32\temp\fwcs-tmp\temp30\dcs6330396934957330492.tmp</urldescriptorspec>
+        <urldescriptorspec>C:\OracleWebCenterSites\11gR1\App_Server\apache-tomcat-6.0.32\temp\fwcs-tmp\temp31\dcs2310230269728113757.tmp</urldescriptorspec>
         <canbechild>T</canbechild>
         <uid>b2da1c13-6c08-43d5-8cc1-9445f80d036d</uid>
         <useDimension></useDimension>
@@ -528,7 +528,7 @@ IT0nUFInICANCiAgIFZhcmlhYmxlcy5xdWVyeWVuZA0KDQo=</byte-array>
 </dependencies>
 ==================______________________==================
 #
-#Sun Feb 03 05:26:23 IST 2013
+#Sat Feb 09 08:37:51 IST 2013
 key=@ASSET_TYPE-b2da1c13-6c08-43d5-8cc1-9445f80d036d
 type=ASSET_TYPE
 sites=EGiftShop

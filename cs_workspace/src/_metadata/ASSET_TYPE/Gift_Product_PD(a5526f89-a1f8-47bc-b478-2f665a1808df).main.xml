@@ -11,7 +11,7 @@
         <description>Gift Product PD</description>
         <usesearchindex>0</usesearchindex>
         <indexfile></indexfile>
-        <urldescriptorspec>C:\OracleWebCenterSites\11gR1\App_Server\apache-tomcat-6.0.32\temp\fwcs-tmp\temp30\dcs6929518665173368477.tmp</urldescriptorspec>
+        <urldescriptorspec>C:\OracleWebCenterSites\11gR1\App_Server\apache-tomcat-6.0.32\temp\fwcs-tmp\temp31\dcs5578347082261111921.tmp</urldescriptorspec>
         <canbechild>F</canbechild>
         <uid>a5526f89-a1f8-47bc-b478-2f665a1808df</uid>
         <useDimension></useDimension>
@@ -513,7 +513,7 @@ YWJsZXMucXVlcnllbmQgICAgICAgIA0KDQo=</byte-array>
 </dependencies>
 ==================______________________==================
 #
-#Sun Feb 03 05:26:21 IST 2013
+#Sat Feb 09 08:37:48 IST 2013
 key=@ASSET_TYPE-a5526f89-a1f8-47bc-b478-2f665a1808df
 type=ASSET_TYPE
 sites=EGiftShop

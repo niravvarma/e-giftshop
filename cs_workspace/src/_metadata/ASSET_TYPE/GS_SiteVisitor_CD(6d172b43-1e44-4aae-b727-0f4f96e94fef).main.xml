@@ -11,7 +11,7 @@
         <description>Site Visitor CD</description>
         <usesearchindex>0</usesearchindex>
         <indexfile></indexfile>
-        <urldescriptorspec>C:\OracleWebCenterSites\11gR1\App_Server\apache-tomcat-6.0.32\temp\fwcs-tmp\temp30\dcs6552300827260404270.tmp</urldescriptorspec>
+        <urldescriptorspec>C:\OracleWebCenterSites\11gR1\App_Server\apache-tomcat-6.0.32\temp\fwcs-tmp\temp31\dcs8077829016162931709.tmp</urldescriptorspec>
         <canbechild>F</canbechild>
         <uid>6d172b43-1e44-4aae-b727-0f4f96e94fef</uid>
         <useDimension></useDimension>
@@ -513,7 +513,7 @@ YWJsZXMucXVlcnllbmQgICAgICAgIA0KDQo=</byte-array>
 </dependencies>
 ==================______________________==================
 #
-#Sun Feb 03 05:26:25 IST 2013
+#Sat Feb 09 08:37:52 IST 2013
 key=@ASSET_TYPE-6d172b43-1e44-4aae-b727-0f4f96e94fef
 type=ASSET_TYPE
 sites=EGiftShop

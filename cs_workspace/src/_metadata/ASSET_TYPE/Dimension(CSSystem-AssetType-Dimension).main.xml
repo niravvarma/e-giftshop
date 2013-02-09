@@ -11,7 +11,7 @@
         <description>Dimension</description>
         <usesearchindex>0</usesearchindex>
         <indexfile></indexfile>
-        <urldescriptorspec>C:\OracleWebCenterSites\11gR1\App_Server\apache-tomcat-6.0.32\temp\fwcs-tmp\temp30\dcs5171317174751843470.tmp</urldescriptorspec>
+        <urldescriptorspec>C:\OracleWebCenterSites\11gR1\App_Server\apache-tomcat-6.0.32\temp\fwcs-tmp\temp31\dcs4140985816961334816.tmp</urldescriptorspec>
         <canbechild>T</canbechild>
         <uid>CSSystem-AssetType-Dimension</uid>
         <useDimension></useDimension>
@@ -526,7 +526,7 @@ YXJpYWJsZXMucXVlcnllbmQNCg==</byte-array>
 </dependencies>
 ==================______________________==================
 #
-#Sun Feb 03 05:26:11 IST 2013
+#Sat Feb 09 08:37:38 IST 2013
 key=@ASSET_TYPE-CSSystem-AssetType-Dimension
 type=ASSET_TYPE
 sites=EGiftShop
