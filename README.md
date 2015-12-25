@@ -11,6 +11,6 @@ It contains following implementations:
 5. Some UI development like validation of input forms, credit card validation, twitter bootstrap, etc.
 6. Synchronizing workspace to OracleWCS instance and vice-versa using ANT script (Not fully working, need to re-check)
 
-Feel free to download and update this project. This project may/may not contain some bugs/issues, please report them.
+Feel free to download and update this project.
 
 Cheers!!
