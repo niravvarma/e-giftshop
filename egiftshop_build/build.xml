@@ -11,7 +11,7 @@
     </condition>
 	<echo message="build.env: ${build.env}" />
 	
-	<!-- Load the local properties file if one exists -->
+	<!-- Load the local properties file if one exists  -->
 	<property file="${basedir}/conf/build-${build.env}.properties" />
 	
 	<path id="project.class.path">
@@ -49,7 +49,7 @@
 		
 		<antcall target="csdt_IMPORT_PAGE"></antcall>
 		
-		<!--<antcall target="csdt_IMPORT_RECOMMENDATIONS"></antcall>-->
+		<antcall target="csdt_IMPORT_RECOMMENDATIONS"></antcall>
 		
 		<antcall target="csdt_IMPORT_Gift_Product"></antcall>
 		
